@@ -17,4 +17,4 @@ fi
 mesg n 2> /dev/null || true
 
 # twrpdtgen
-alias twrpdtgen="python3 -m twrpdtgen"
+# alias twrpdtgen="python3 -m twrpdtgen"
