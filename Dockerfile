@@ -72,8 +72,8 @@ RUN \
 
 # Install Clang
 RUN \
-    wget https://github.com/mitsu00/build_test/releases/download/clang/clang.zip -O /tmp/clang.zip \
-    sudo unzip /tmp/clang.zip -d /usr/local/bin/clang
+wget -q https://github.com/mitsu00/build_test/releases/download/clang/clang.zip -O /tmp/clang.zip \
+&& sudo unzip /tmp/clang.zip -d /usr/local/bin/clang
 
 # Setup Android Build Environment
 RUN \
