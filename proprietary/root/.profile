@@ -16,5 +16,5 @@ fi
 
 mesg n 2> /dev/null || true
 
-# twrpdtgen
+export PATH=/usr/local/bin/clang/bin:$PATH
 # alias twrpdtgen="python3 -m twrpdtgen"
