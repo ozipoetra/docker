@@ -55,7 +55,7 @@ sudo apt install \
     nano rsync rclone tmux screen openssh-server \
     python3-pip adb fastboot jq npm neofetch mlocate \
     zip unzip tar ccache \
-    cpio lzma libdebuginfod-dev \
+    cpio lzma \
     -y
 
 # Filesystems
@@ -67,7 +67,7 @@ sudo apt install \
 # Install schedtool and Java
 RUN \
     sudo apt install \
-        schedtool openjdk-8-jdk \
+        schedtool libdebuginfod-dev openjdk-8-jdk \
     -y
 
 # Setup Android Build Environment
