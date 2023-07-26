@@ -55,7 +55,7 @@ sudo apt install \
     nano rsync rclone tmux screen openssh-server \
     python3-pip adb fastboot jq npm neofetch mlocate \
     zip unzip tar ccache \
-    cpio lzma \
+    cpio lzma libdebuginfod-dev \
     -y
 
 # Filesystems
