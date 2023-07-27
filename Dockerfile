@@ -67,7 +67,7 @@ sudo apt install \
 # Install schedtool and Java
 RUN \
     sudo apt install \
-        schedtool libdebuginfod-dev openjdk-8-jdk \
+        schedtool openjdk-8-jdk \
     -y
 
 # Setup Android Build Environment
