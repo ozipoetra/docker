@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Working Directory
-WORKDIR /root
+WORKDIR /home
 
 # Maintainer
 MAINTAINER mitsu00 <dev@ozip.my.id>
