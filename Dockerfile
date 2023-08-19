@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Working Directory
-WORKDIR /home
+WORKDIR /root
 
 # Maintainer
 MAINTAINER mitsu00 <dev@ozip.my.id>
@@ -76,5 +76,10 @@ git clone https://github.com/akhilnarang/scripts.git /tmp/scripts \
 && sudo bash /tmp/scripts/setup/android_build_env.sh \
 && rm -rf /tmp/scripts
 
+RUN \
+mkdir -p /root/prebuilts/clang/host/linux-x86/clang-r450784d \
+&& wget -q https://github.com/mitsu00/build_test/releases/download/clang/clang.zip -O /tmp/clang.zip \
+&& sudo unzip /tmp/clang.zip -d /root/prebuilts/clang/host/linux-x86/clang-r450784d
+&& rm /tmp/clang.zip
 # Run bash
 CMD ["bash"]
