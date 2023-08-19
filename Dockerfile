@@ -78,9 +78,7 @@ git clone https://github.com/akhilnarang/scripts.git /tmp/scripts \
 
 RUN \
 mkdir -p /root/prebuilts/clang/host/linux-x86/clang-r450784d \
-&& wget -q https://github.com/mitsu00/build_test/releases/download/clang/clang.zip -O /tmp/clang.zip \
-&& sudo unzip /tmp/clang.zip -d /root/prebuilts/clang/host/linux-x86/clang-r450784d \
-&& rm /tmp/clang.zip
+&& git clone https://gitlab.com/ImSurajxD/clang-r450784d.git --depth=1 /root/prebuilts/clang/host/linux-x86/clang-r450784d
 
 # Run bash
 CMD ["bash"]
