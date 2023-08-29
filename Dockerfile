@@ -1,5 +1,5 @@
 # Base Image: Ubuntu
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 # Working Directory
 WORKDIR /root
